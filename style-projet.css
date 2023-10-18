@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Images/image5.jpg');
+    background-size: cover;
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+    position: relative; /* Position relative pour les éléments de menu déroulant */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+/* Styles pour le menu déroulant */
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 0;
+}
+
+.sub-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 15px;
+}
+.ma-box {
+    width: 45%; /* Largeur ajustée pour qu'elles tiennent côte à côte */
+    height: 300px;
+    background-color: #f0f0f0;
+    border: 10px solid blue; /* Vous pouvez définir la couleur de la bordure ici */
+    border-radius: 10px 5px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block; /* Pour afficher les boîtes en ligne */
+    box-sizing: border-box; /* Inclure la bordure et le padding dans la largeur */
+    vertical-align: top; /* Aligner les boîtes en haut */
+}
+
+.ma-box h2 {
+    color: #333;
+}
+
+.ma-box p {
+    text-align: justify;
+}
+
